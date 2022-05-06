@@ -1,0 +1,25 @@
+﻿<Window x:Class="ColorDefender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ColorDefender"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Name="scoreView" Content="Score: 0" Margin="0,15,0,217" FontSize="18" IsEnabled="False"/>
+        <Grid x:Name="GameView" Margin="13,91,344,20"/>
+        <Image x:Name="refreshView" Margin="423,57,299,313" MouseDown="refreshClick" Source="C:/Users/Micheal/source/repos/ColorDefender/Images/Refresh.png"/>
+        <Image x:Name="enemyView" Margin="552,102,73,148"/>
+        <Label x:Name="eStats" Margin="506,328,0,10"></Label>
+        <Button Content="Plasma Canon" Margin="234,13,478,371" Click="pcEvent" Background="#FFC19393" Foreground="#FF0427EA"
+                ToolTip="Spend 15 points to deal 20 damage"
+                ToolTipService.InitialShowDelay="1000" />
+        <Button Content="Photon Bomb" Margin="332,13,380,371" Click="pbEvent" Background="#FFC19393" Foreground="#FF0427EA"
+                 ToolTip="Spend 20 points to deal 25 damage"
+                ToolTipService.InitialShowDelay="1000" />
+        <Button Content="Lazer" Margin="138,13,574,371" Click="lEvent" Background="#FFC19393" Foreground="#FF0427EA"
+                 ToolTip="Spend 5 points to create 2 rainbow spheres"
+                ToolTipService.InitialShowDelay="1000" />
+    </Grid>
+</Window>
